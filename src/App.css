@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.app-main-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color);
+    height: 100vh;
+    overflow: hidden;
+}
+.app-main-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.app-main-content .contact-header {
+    display: flex;
+    flex-direction: column;
+ 
+    background-color: red;
+    justify-content: center;
+    gap: 40px;
+   
+}
+.app-main-content .contact-header .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 80px;
+    flex: 1;
+}
+.app-main-content .contact-header .info-container .contact-profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 175px;
+}
+.app-main-content .contact-header .info-container .texts-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.app-main-content .contact-header .buttons-container {
+    display: flex;  
+    background-color: white;
+    column-gap: 0.5px;
+    border-top: 0.5px solid white;
+}
+.app-main-content.margin {
+    padding-top: 100px;
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: local('Inter-Black'), url(./assets/fonts/inter/Inter-Black.ttf) format('truetype');
+}
+.image-with-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
