@@ -2,7 +2,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 // Components
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 // Styles
 import './App.css'
 
@@ -27,18 +28,64 @@ const App = () => {
           </div>
 
           <div className='buttons-container'>
-            <button style={{ height: 100, flex: 1, border: 'none', backgroundColor: 'red', paddingLeft: 40 }}>
-              <span style={{ color: 'white', textAlign: 'center' }}>Call</span>
+            <button style={{
+              height: 100,
+              flex: 1,
+              border: 'none',
+              backgroundColor: 'red',
+              paddingLeft: 40
+            }}
+            >
+              <span style={{
+                color: 'white',
+                textAlign: 'center'
+              }}
+              >
+                Call
+              </span>
+              <FontAwesomeIcon icon={faPhone} fade />
+
             </button>
-            <button style={{ height: 100, flex: 1, border: 'none', backgroundColor: 'red' }}>
-              <span style={{ color: 'white', textAlign: 'center' }}>Email</span>
+            <button style={{
+              height: 100,
+              flex: 1,
+              border: 'none',
+              backgroundColor: 'red'
+            }}
+            >
+              <span style={{
+                color: 'white',
+                textAlign: 'center'
+              }}
+              >
+                Email
+              </span>
             </button>
-            <button style={{ height: 100, flex: 1, border: 'none', backgroundColor: 'red', paddingRight: 40 }}>
-              <span style={{ color: 'white', textAlign: 'center' }}>Directions</span>
+
+            <button style={{
+              height: 100,
+              flex: 1,
+              border: 'none',
+              backgroundColor: 'red',
+              paddingRight: 40
+            }}
+            >
+              <span style={{
+                color: 'white',
+                textAlign: 'center'
+              }}
+              >Directions
+              </span>
             </button>
           </div>
         </div>
-        <div style={{ backgroundColor: 'white', flex: 1 }} />
+        <div
+          style={{
+            backgroundColor: 'white',
+            flex: 1
+          }}
+          className='example'
+        />
       </main>
     </div>
   )
